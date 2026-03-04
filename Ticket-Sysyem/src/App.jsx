@@ -3,7 +3,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 
-// ─── DATA ─────────────────────────────────────────────────────────────────────
+
 const INITIAL_TICKETS = [
   { id: "#1001", title: "Login Issues – Can't Access Account",      desc: "Customer is unable to log in to their account. They've tried resetting their password multiple times but still...", status: "Open",        priority: "HIGH PRIORITY",   assignee: "John Smith",      date: "1/15/2024" },
   { id: "#1002", title: "Payment Failed – Card Declined",           desc: "Customer attempted to pay using Visa ending 1234 but the payment keeps failing despite sufficient balance.",          status: "Open",        priority: "HIGH PRIORITY",   assignee: "Sarah Johnson",   date: "1/16/2024" },
@@ -21,7 +21,7 @@ const STATUS_CLASS  = { "Open": "badge-open", "In-Progress": "badge-inprogress" 
 const PRIORITY_CLASS = { "HIGH PRIORITY": "pri-high", "MEDIUM PRIORITY": "pri-medium", "LOW PRIORITY": "pri-low" };
 
 
-// ─── ICONS ────────────────────────────────────────────────────────────────────
+
 const CalIcon = () => (
   <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
     <rect x="1" y="2" width="14" height="13" rx="2"/>
@@ -31,7 +31,7 @@ const CalIcon = () => (
   </svg>
 );
 
-// ─── NAVBAR ───────────────────────────────────────────────────────────────────
+
 function Navbar({ onNewTicket }) {
   const [open, setOpen] = useState(false);
   return (
@@ -50,7 +50,7 @@ function Navbar({ onNewTicket }) {
   );
 }
 
-// ─── STAT CARDS ───────────────────────────────────────────────────────────────
+
 function StatCards({ inProgress, resolved }) {
   return (
     <div className="stat-cards">
@@ -66,7 +66,7 @@ function StatCards({ inProgress, resolved }) {
   );
 }
 
-// ─── TICKET CARD ──────────────────────────────────────────────────────────────
+
 function TicketCard({ ticket, onClick, selected }) {
   return (
     <div className={`ticket-card${selected ? " selected" : ""}`} onClick={() => onClick(ticket)}>
@@ -84,7 +84,7 @@ function TicketCard({ ticket, onClick, selected }) {
   );
 }
 
-// ─── TASK STATUS PANEL ────────────────────────────────────────────────────────
+
 function TaskStatus({ taskQueue, resolvedList, onComplete }) {
   return (
     <div className="task-panel">
@@ -119,7 +119,7 @@ function TaskStatus({ taskQueue, resolvedList, onComplete }) {
   );
 }
 
-// ─── FOOTER ───────────────────────────────────────────────────────────────────
+
 function Footer() {
   return (
     <footer className="footer">
@@ -167,7 +167,7 @@ function Footer() {
   );
 }
 
-// ─── NEW TICKET MODAL ─────────────────────────────────────────────────────────
+
 function Modal({ onClose, onSubmit }) {
   const [title, setTitle]       = useState("");
   const [desc, setDesc]         = useState("");
@@ -208,7 +208,7 @@ function Modal({ onClose, onSubmit }) {
   );
 }
 
-// ─── APP ──────────────────────────────────────────────────────────────────────
+
 export default function App() {
   const [tickets,      setTickets]      = useState(INITIAL_TICKETS);
   const [taskQueue,    setTaskQueue]    = useState([]);
