@@ -36,7 +36,7 @@ function Navbar({ onNewTicket }) {
   const [open, setOpen] = useState(false);
   return (
     <nav className="navbar">
-      <span className="nav-brand">CS — Ticket System</span>
+      <span className="nav-brand">Rijoyan's Ticket System</span>
       <button className="hamburger" onClick={() => setOpen(!open)}>
         <span/><span/><span/>
       </button>
