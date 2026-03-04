@@ -1,0 +1,43 @@
+/* ─── FONTS & RESET ─────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --purple-start : #7c3aed;
+  --purple-end   : #9d6fe8;
+  --green-start  : #16a34a;
+  --green-end    : #22c55e;
+  --bg           : #f4f5f7;
+  --surface      : #ffffff;
+  --border       : #e5e7eb;
+  --text-1       : #111827;
+  --text-2       : #6b7280;
+  --text-3       : #9ca3af;
+  --radius-sm    : 6px;
+  --radius-md    : 10px;
+  --shadow-sm    : 0 1px 3px rgba(0,0,0,.08);
+  --shadow-md    : 0 4px 12px rgba(0,0,0,.10);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text-1);
+  font-size: 13px;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+#root {
+  max-width: 860px;
+  margin: 0 auto;
+  background: var(--bg);
+}
+
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+button { cursor: pointer; border: none; font-family: inherit; font-size: 13px; }
+input, textarea, select { font-family: inherit; font-size: 13px; }
