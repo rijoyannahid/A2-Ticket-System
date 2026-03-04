@@ -126,7 +126,7 @@ function Footer() {
       <div className="footer-inner">
         <div className="footer-brand">
           <h4>CS — Ticket System</h4>
-          <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <p>We are offering online ticket in a reasonable price. You can download your ticket soon after the payment from the download section. Rijoyan's ticket is here as your partner, Happy tickets</p>
         </div>
         <div className="footer-col">
           <h5>Company</h5>
