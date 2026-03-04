@@ -1,4 +1,4 @@
-/* ─── FONTS & RESET ─────────────────────────────────────────────────────── */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -42,14 +42,14 @@ ul { list-style: none; }
 button { cursor: pointer; border: none; font-family: inherit; font-size: 13px; }
 input, textarea, select { font-family: inherit; font-size: 13px; }
 
-/* ─── APP SHELL ──────────────────────────────────────────────────────────── */
+
 .app { width: 100%; }
 
 .page-body {
   padding: 0 20px 32px;
 }
 
-/* ─── NAVBAR ─────────────────────────────────────────────────────────────── */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -107,7 +107,7 @@ input, textarea, select { font-family: inherit; font-size: 13px; }
 }
 .hamburger span { display: block; width: 20px; height: 2px; background: var(--text-1); border-radius: 2px; }
 
-/* ─── STAT CARDS ─────────────────────────────────────────────────────────── */
+
 .stat-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -128,7 +128,7 @@ input, textarea, select { font-family: inherit; font-size: 13px; }
   min-height: 110px;
 }
 
-/* wave/circle overlay */
+
 .stat-card::before {
   content: '';
   position: absolute;
@@ -139,7 +139,7 @@ input, textarea, select { font-family: inherit; font-size: 13px; }
   pointer-events: none;
 }
 
-/* diagonal line pattern */
+
 .stat-card::after {
   content: '';
   position: absolute;
@@ -175,7 +175,7 @@ input, textarea, select { font-family: inherit; font-size: 13px; }
   z-index: 1;
 }
 
-/* ─── CONTENT GRID ───────────────────────────────────────────────────────── */
+
 .content-grid {
   display: grid;
   grid-template-columns: 1fr 200px;
@@ -184,7 +184,7 @@ input, textarea, select { font-family: inherit; font-size: 13px; }
   align-items: start;
 }
 
-/* ─── SECTION HEADING ────────────────────────────────────────────────────── */
+
 .section-heading {
   font-size: 14px;
   font-weight: 700;
@@ -192,14 +192,14 @@ input, textarea, select { font-family: inherit; font-size: 13px; }
   margin-bottom: 12px;
 }
 
-/* ─── TICKETS GRID (2 columns) ───────────────────────────────────────────── */
+
 .tickets-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
 
-/* ─── TICKET CARD ────────────────────────────────────────────────────────── */
+
 .ticket-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -266,7 +266,7 @@ input, textarea, select { font-family: inherit; font-size: 13px; }
   white-space: nowrap;
 }
 
-/* ─── BADGES ─────────────────────────────────────────────────────────────── */
+
 .badge {
   font-size: 11px;
   font-weight: 600;
@@ -278,7 +278,7 @@ input, textarea, select { font-family: inherit; font-size: 13px; }
 .badge-open       { background: #dcfce7; color: #16a34a; }
 .badge-inprogress { background: #fef9c3; color: #92400e; }
 
-/* ─── TASK STATUS PANEL ──────────────────────────────────────────────────── */
+
 .task-sidebar { position: sticky; top: 60px; }
 
 .task-panel {
@@ -301,7 +301,7 @@ input, textarea, select { font-family: inherit; font-size: 13px; }
   margin-bottom: 12px;
 }
 
-/* active task item */
+
 .task-item {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -332,7 +332,7 @@ input, textarea, select { font-family: inherit; font-size: 13px; }
 }
 .btn-complete:hover { background: #15803d; }
 
-/* resolved block */
+
 .resolved-block {
   margin-top: 10px;
   padding-top: 10px;
@@ -362,7 +362,7 @@ input, textarea, select { font-family: inherit; font-size: 13px; }
   line-height: 1.4;
 }
 
-/* ─── ALL DONE STATE ─────────────────────────────────────────────────────── */
+
 .all-done {
   display: flex;
   flex-direction: column;
@@ -378,7 +378,7 @@ input, textarea, select { font-family: inherit; font-size: 13px; }
 .all-done span { font-size: 36px; }
 .all-done p    { font-size: 14px; font-weight: 600; color: var(--text-2); }
 
-/* ─── MODAL ──────────────────────────────────────────────────────────────── */
+
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -451,7 +451,7 @@ input, textarea, select { font-family: inherit; font-size: 13px; }
 }
 .btn-cancel:hover { background: #e5e7eb; }
 
-/* ─── FOOTER ─────────────────────────────────────────────────────────────── */
+
 .footer { background: #1a1a2e; color: #9ca3af; margin-top: 48px; }
 
 .footer-inner {
@@ -481,7 +481,7 @@ input, textarea, select { font-family: inherit; font-size: 13px; }
   margin: 0 auto;
 }
 
-/* ─── RESPONSIVE ─────────────────────────────────────────────────────────── */
+
 @media (max-width: 768px) {
   .nav-links { display: none; position: absolute; top: 50px; left: 0; right: 0; background: var(--surface); border-bottom: 1px solid var(--border); flex-direction: column; padding: 12px 20px 16px; gap: 12px; z-index: 150; box-shadow: var(--shadow-md); }
   .nav-links.open { display: flex; }
